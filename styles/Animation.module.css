@@ -1,0 +1,64 @@
+/* .circle-enter-active { animation: 1s circle reverse; }
+.circle-leave-active { animation: 1s circle; }
+
+@keyframes circle {
+  0% { clip-path: circle(75%); }
+  100% { clip-path: circle(0%); }
+} */
+
+
+  @keyframes animateParallelogram {
+    0% {
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    }
+    25% {
+      clip-path: polygon(37.5% 0, 100% 25%, 62.5% 100%, 0 75%);
+    }
+    50% {
+      clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+    }
+    
+    100% {
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    }
+  }
+  @keyframes animateParallelogram1 {
+    0% {
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    }
+    12.5% {
+      clip-path: polygon(50% 0, 90% 20%, 50% 80%, 10% 100%);
+    }
+    25% {
+      clip-path: polygon(40% 0, 80% 10%, 60% 90%, 20% 100%);
+    }
+    37.5% {
+      clip-path: polygon(30% 0, 70% 20%, 70% 80%, 30% 100%);
+    }
+    50% {
+      clip-path: polygon(20% 0, 60% 10%, 80% 90%, 40% 100%);
+    }
+    62.5% {
+      clip-path: polygon(10% 0, 50% 20%, 90% 80%, 50% 100%);
+    }
+    75% {
+      clip-path: polygon(0 50%, 40% 0, 100% 50%, 40% 100%);
+    }
+    87.5% {
+      clip-path: polygon(10% 80%, 50% 0, 90% 20%, 50% 100%);
+    }
+    100% {
+      clip-path: polygon(20% 90%, 60% 0, 80% 10%, 40% 100%);
+    }
+  }
+
+
+
+
+  
+  .element {
+    animation: animateParallelogram 10s linear infinite;
+  }
+  .element1 {
+    animation: animateParallelogram1 10s linear infinite;
+  }
